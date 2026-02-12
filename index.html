@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parita Holdings AG | Parita Immobilien AG — Official Website</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Official website for Parita Holding AG and Parita Immobilien AG (Switzerland). Contact information and verification notice to prevent impersonation and fraud." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://parita.ch/" />
+  <link rel="alternate" href="https://parita.ch/?lang=en" hreflang="en" />
+  <link rel="alternate" href="https://parita.ch/?lang=de" hreflang="de" />
+  <meta property="og:title" content="Parita Holdings AG | Parita Immobilien AG — Official Website" />
+  <meta property="og:description" content="Official website for Parita Holding AG and Parita Immobilien AG (Switzerland). Contact information and verification notice." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://parita.ch/" />
+
+  <!-- Minimal structured data (no address / officer details beyond public-facing contact) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Parita Holding AG",
+    "url": "https://parita.ch/",
+    "sameAs": [],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "official contact",
+      "email": "info@parita.ch"
+    }]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #111;
+      --muted: #555;
+      --border: #e4e6ea;
+      --shadow: rgba(0,0,0,0.03);
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 56px 28px;
+    }
+
+    header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+
+    .brand h1 {
+      font-size: 34px;
+      font-weight: 650;
+      margin: 0 0 8px 0;
+      letter-spacing: -0.4px;
+    }
+
+    .brand h2 {
+      font-size: 18px;
+      font-weight: 520;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .lang {
+      display: inline-flex;
+      gap: 8px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px;
+      box-shadow: 0 1px 6px var(--shadow);
+      height: fit-content;
+    }
+
+    .lang button {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      padding: 8px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .lang button[aria-pressed="true"] {
+      background: #111;
+      color: #fff;
+    }
+
+    section {
+      margin-bottom: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 26px;
+      border-radius: 10px;
+      box-shadow: 0 1px 10px var(--shadow);
+    }
+
+    .card h3 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      font-weight: 650;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    @media (min-width: 840px) {
+      .grid {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 16px;
+      }
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid #cfcfd3;
+    }
+
+    a:hover {
+      border-bottom-color: var(--text);
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--muted);
+      background: #fff;
+      margin-top: 10px;
+    }
+
+    footer {
+      font-size: 13px;
+      color: #777;
+      margin-top: 44px;
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+    }
+
+    /* language blocks */
+    .lang-block { display: none; }
+    .lang-block.active { display: block; }
+
+    /* small accessibility touch */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>Parita Holdings AG</h1>
+        <h2>Parita Immobilien AG</h2>
+      </div>
+
+      <nav class="lang" aria-label="Language selector">
+        <span class="sr-only">Choose language</span>
+        <button type="button" id="btn-en" aria-pressed="true">EN</button>
+        <button type="button" id="btn-de" aria-pressed="false">DE</button>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <div id="content-en" class="lang-block active">
+          <h3>Official website & verification notice</h3>
+          <p>
+            This is the <strong>official website</strong> for <strong>Parita Holding AG</strong> and <strong>Parita Immobilien AG</strong> (Switzerland).
+          </p>
+          <p class="muted">
+            If you have received a message, request, or documentation claiming to be from “Parita” and you are unsure of its authenticity,
+            please verify by contacting us using the details on this page.
+          </p>
+          <p class="muted">
+            We recommend independently verifying any new counterparty relationship and treating unexpected requests for payments, goods, or sensitive information as potentially fraudulent.
+          </p>
+          <span class="pill">Purpose: reduce impersonation and fraud risk</span>
+        </div>
+
+        <div id="content-de" class="lang-block">
+          <h3>Offizielle Website & Verifizierungshinweis</h3>
+          <p>
+            Dies ist die <strong>offizielle Website</strong> von <strong>Parita Holding AG</strong> und <strong>Parita Immobilien AG</strong> (Schweiz).
+          </p>
+          <p class="muted">
+            Falls Sie eine Nachricht, Anfrage oder Unterlagen erhalten haben, die angeblich von „Parita“ stammen, und Sie sich über die Echtheit nicht sicher sind,
+            kontaktieren Sie uns bitte über die Angaben auf dieser Seite.
+          </p>
+          <p class="muted">
+            Wir empfehlen, neue Geschäftskontakte unabhängig zu verifizieren und unerwartete Aufforderungen zu Zahlungen, Lieferungen oder sensiblen Informationen als potenziell betrügerisch zu behandeln.
+          </p>
+          <span class="pill">Zweck: Risiko von Identitätsmissbrauch reduzieren</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <div id="contact-en" class="lang-block active">
+          <h3>Official contact</h3>
+          <p>
+            <strong>J Ollech</strong><br />
+            <span class="muted">Director</span>
+          </p>
+          <p>
+            Email: <a href="mailto:info@parita.ch">info@parita.ch</a><br />
+            Phone: <span class="muted">[add number]</span>
+          </p>
+          <p class="muted" style="margin-top:14px;">
+            For verification, please use the contact details above (not those provided in third-party messages).
+          </p>
+        </div>
+
+        <div id="contact-de" class="lang-block">
+          <h3>Offizieller Kontakt</h3>
+          <p>
+            <strong>J Ollech</strong><br />
+            <span class="muted">Direktor</span>
+          </p>
+          <p>
+            E-Mail: <a href="mailto:info@parita.ch">info@parita.ch</a><br />
+            Telefon: <span class="muted">[Nummer hinzufügen]</span>
+          </p>
+          <p class="muted" style="margin-top:14px;">
+            Bitte verwenden Sie zur Verifizierung die oben genannten Kontaktdaten (nicht die in Drittmitteilungen angegebenen).
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Parita Holding AG | Parita Immobilien AG
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const qs = new URLSearchParams(window.location.search);
+      const initial = (qs.get('lang') || 'en').toLowerCase() === 'de' ? 'de' : 'en';
+
+      const btnEn = document.getElementById('btn-en');
+      const btnDe = document.getElementById('btn-de');
+
+      const blocks = {
+        en: [
+          document.getElementById('content-en'),
+          document.getElementById('contact-en')
+        ],
+        de: [
+          document.getElementById('content-de'),
+          document.getElementById('contact-de')
+        ]
+      };
+
+      function setLang(lang) {
+        const isDe = lang === 'de';
+        document.documentElement.lang = isDe ? 'de' : 'en';
+
+        btnEn.setAttribute('aria-pressed', String(!isDe));
+        btnDe.setAttribute('aria-pressed', String(isDe));
+
+        // toggle blocks
+        ['en','de'].forEach(l => blocks[l].forEach(el => el.classList.remove('active')));
+        blocks[lang].forEach(el => el.classList.add('active'));
+
+        // update URL (SEO-friendly parameters)
+        const url = new URL(window.location.href);
+        url.searchParams.set('lang', lang);
+        window.history.replaceState({}, '', url);
+      }
+
+      btnEn.addEventListener('click', () => setLang('en'));
+      btnDe.addEventListener('click', () => setLang('de'));
+
+      setLang(initial);
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
