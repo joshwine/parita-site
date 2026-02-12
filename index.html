@@ -16,18 +16,17 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://parita.ch/" />
 
-  <!-- Minimal structured data (no address / officer details beyond public-facing contact) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Parita Holding AG",
     "url": "https://parita.ch/",
-    "sameAs": [],
     "contactPoint": [{
       "@type": "ContactPoint",
       "contactType": "official contact",
-      "email": "info@parita.ch"
+      "email": "info@parita.ch",
+      "telephone": "+41 55 505 22 50"
     }]
   }
   </script>
@@ -105,9 +104,7 @@
       color: #fff;
     }
 
-    section {
-      margin-bottom: 18px;
-    }
+    section { margin-bottom: 18px; }
 
     .card {
       background: var(--card);
@@ -123,9 +120,7 @@
       font-weight: 650;
     }
 
-    .muted {
-      color: var(--muted);
-    }
+    .muted { color: var(--muted); }
 
     .grid {
       display: grid;
@@ -146,9 +141,7 @@
       border-bottom: 1px solid #cfcfd3;
     }
 
-    a:hover {
-      border-bottom-color: var(--text);
-    }
+    a:hover { border-bottom-color: var(--text); }
 
     .pill {
       display: inline-block;
@@ -169,11 +162,9 @@
       padding-top: 18px;
     }
 
-    /* language blocks */
     .lang-block { display: none; }
     .lang-block.active { display: block; }
 
-    /* small accessibility touch */
     .sr-only {
       position: absolute;
       width: 1px;
@@ -187,6 +178,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <header>
@@ -244,7 +236,7 @@
           </p>
           <p>
             Email: <a href="mailto:info@parita.ch">info@parita.ch</a><br />
-            Phone: <span class="muted">+41 55 505 22 50</span>
+            Phone: <a href="tel:+41555052250">+41 55 505 22 50</a>
           </p>
           <p class="muted" style="margin-top:14px;">
             For verification, please use the contact details above (not those provided in third-party messages).
@@ -259,7 +251,7 @@
           </p>
           <p>
             E-Mail: <a href="mailto:info@parita.ch">info@parita.ch</a><br />
-            Telefon: <span class="muted">[Nummer hinzufügen]</span>
+            Telefon: <a href="tel:+41555052250">+41 55 505 22 50</a>
           </p>
           <p class="muted" style="margin-top:14px;">
             Bitte verwenden Sie zur Verifizierung die oben genannten Kontaktdaten (nicht die in Drittmitteilungen angegebenen).
@@ -299,11 +291,9 @@
         btnEn.setAttribute('aria-pressed', String(!isDe));
         btnDe.setAttribute('aria-pressed', String(isDe));
 
-        // toggle blocks
         ['en','de'].forEach(l => blocks[l].forEach(el => el.classList.remove('active')));
         blocks[lang].forEach(el => el.classList.add('active'));
 
-        // update URL (SEO-friendly parameters)
         const url = new URL(window.location.href);
         url.searchParams.set('lang', lang);
         window.history.replaceState({}, '', url);
